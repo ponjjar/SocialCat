@@ -1,0 +1,431 @@
+/*Caique Ponjjar - CP1903233 & Rhyan S. Oliveira - CP1903217*/
+/*decidimos fazer esse css sem utilizar muito bootstrap...*/
+
+
+/*Fundo Base*/
+ fieldset {
+   color: rgba(156, 99, 207, 1);
+   background-color: rgba(15, 14, 15, 0.9);
+   box-shadow: 0 0 20px rgb(0, 0, 0);
+   border: 1px solid  rgb(0, 0, 0);
+   border-radius: 8px;
+   width:60%;
+ }
+ /*Personalização da Legenda parte 1*/
+ #legendind{
+   background-color: rgba(0, 0, 0, 0.45);
+   border-radius: 8px;
+   transition: 0.5s;
+  width: 120px;
+  }
+
+ /*Personalização da Legenda parte 2 (mouse)*/
+#legendind:hover{
+   background-color: rgba(255, 255, 255, 1);
+   border-radius: 0.2px;
+   width: 150px;
+   font-size: 18px;
+   transition: 0.3s;
+ }
+ /*Personalização do Fundo*/
+body{
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    background-attachment: fixed;
+   -moz-transform-origin: top center;
+  background-repeat: no-repeat center center fixed;
+   background: linear-gradient(to right bottom,#485DA6,#6d327c,#01b18e,#32b37b);
+   /*background-image: url("./Login/img/gatinhos2.jpg");
+   background-repeat: repeat;
+   background-attachment: fixed;*/   
+   background-color: black;
+   background-size: 300%;
+   overflow-x: hidden;
+ }
+ ::-webkit-scrollbar {
+  width: 0.4%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #4d3f5c;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f223d;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f547d;
+}
+ /*pra ficar bonito*/
+ input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+
+ /*personalização da caixa de dialogo e do selecionar*/
+ input,select{
+   background-color: rgba(155, 61, 255, 1);
+   background-image: linear-gradient(to right, rgb(203, 171, 255),rgb(171, 100, 255));
+   border-radius: 25px;
+   height: 30px;
+   color: #fff;
+   border: 2px  solid rgb(174, 128, 255);
+   transition: 0.9s;
+   font-size: 70%;
+   text-align: center;
+   width: 25%;
+ }
+ ::placeholder {
+   color: rgb(222, 207, 255);
+}
+ /*personalização da caixa de dialogo e do selecionar parte 2 (mouse)*/
+ input:hover,button:hover, select:hover {
+   font-size: 90%;
+   width: 30%;
+   border-radius: 4px;
+   background: rgba(155, 61, 255, 0.05);
+   text-align: center;
+   color: rgba(174, 128, 255,0.6);
+   border: 2px solid rgba(174, 128, 255,0.6);
+   transition: 0.5s;
+ }
+ /*input[type=checkbox]{
+        display: none;
+   display:inline-block;
+   height:20px;
+   padding:0 0 0 25px;
+   width: 5%;
+    background-position:90px -9px; /* Muda a posição do background só no checkbox */
+   /*background-image:url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp);
+   background-repeat:no-repeat;
+   background-position:0 0;
+ } */
+
+
+input[type="checkbox"]{
+  display: none;
+}
+ label {
+   padding: 10px;
+   display: block;
+   position: relative;
+   margin: 10px;
+   width: 60%;
+   cursor: pointer;
+ }
+
+ label:before {
+   color: white;
+   content: " ";
+   display: block;
+   border-radius: 50%;
+   border: 1px solid grey;
+   position: absolute;
+   top: 25px;
+   left: 50%;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   line-height: 28px;
+   transition-duration: 0.4s;
+   transform: scale(0);
+ }
+
+
+ #outputDiv{
+   position: relative;
+ }
+ /*Personalização do Botão interativo*/
+ button{
+   background-color: rgba(155, 61, 255, 1);
+   background-image: linear-gradient(to right, rgb(187, 150, 255),rgb(231, 150, 255));
+   border-radius: 25px;
+   height: 30px;
+   color: #fff;
+   border: 2px  solid rgb(174, 128, 255);
+   transition: 0.9s;
+   font-size: 70%;
+   text-align: center;
+   width: 15%;
+ }
+
+/*Imagens*/
+#images{
+  cursor: pointer;
+  z-index: 0;
+  width: 65%;
+  box-shadow: 0 0 0px #333;
+  /*color: white;*/
+  border: 0px solid gray;
+  transition: 0.5s;
+}
+#images:active{
+  width: 67%;
+  box-shadow: 0 0 30px rgb(80, 0, 89);
+  /*color: white;*/
+  transition: 0.2s;
+}
+ /*Botão de like*/
+ #like {
+  transform: scale(0.95);
+  z-index: 1;
+  box-shadow: 0 0 20px #333;
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  /*color: white;*/
+  border-radius: 40%;
+  border: 1px solid grey;
+  transition-duration: 0.2s;
+  margin-right: 75%;
+  margin-top: -0%;
+}
+#like:before {
+  /*background-color: grey;*/
+  transform: scale(0.95);
+}
+#like:hover {
+    transform: scale(1.3);
+  color: white;
+}
+#like:active {
+  color: rgb(252, 222, 177);
+}
+/*Tags, titulo e autor*/
+#titulo {
+    background-color: rgba(186, 121, 97, 0.3);
+    border-radius: 8px;
+    border-style: none;
+    transition: 0.5s;
+    width: 45%;
+    color: white;
+    margin-left: 10%;
+    margin-top: -6.5%;
+    font-size: 15px;
+    height: 8%;
+}
+#titulo:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.4px;
+  width: 48%;
+  padding: 0.3%;
+  font-size: 16px;
+  transition: 0.6s;
+  color: black;
+  margin-top: -6.6%;
+}
+#cabecalho{
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 66%;
+  transition: 0.6s;
+  height: 60px;
+}
+#cabecalho:hover{
+  cursor:pointer;
+  background-color: rgba(77, 44, 21, 0.4);
+  border-radius: 0.4px;
+  padding: 0.3%;
+  font-size: 22px;
+  transition: 0.6s;
+  height: 60;
+}
+#data{
+    margin-top: -2.3%;
+    margin-left: 40%;
+      color: white;
+}
+#autor{
+  color: white;
+  margin-right: 200px;
+  width: 25%;
+  font-size: 110%;
+  background-color: rgba(186, 121, 97, 0.3);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+#autor:hover{
+  background-color: rgba(186, 121, 97, 0.4);
+  border-radius: 3px;
+  width: 40%;
+  font-size: 120%;
+  transition: 0.4s;
+}
+.post{
+  background-color: rgba(63, 57, 64, 0.6);
+  border-radius: 20px;
+  margin-top: 6%;
+}
+
+#seguir{
+  background: linear-gradient(to right bottom,rgba(99, 255, 234, 0.5),rgba(124, 99, 255, 0.6));
+  border-radius: 15px;
+  height: 15%;
+  width: 49%;
+  color: white;
+  transition: 0.5s;
+}
+#seguir:hover{
+  background: linear-gradient(to right bottom,rgba(99, 255, 234, 0.5),rgba(124, 99, 255, 0.6));
+  color: rgb(252, 222, 177);
+  padding: 3px;
+  margin-top: 5%;
+  width: 52%;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+#followbutton{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+  transition: 0.4s;
+  padding: 2px;
+  margin-left: 10%;
+  width: 20%;
+    transform: scale(1.1);
+}
+#followbutton:active{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: 0.2s;
+    transform: scale(1.3);
+}
+@media screen and (max-width: 720px){
+  body{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      background-attachment: fixed;
+    background-repeat: no-repeat center center fixed;
+     background: linear-gradient(to right bottom,#485DA6,#6d327c,#01b18e,#32b37b);
+     /*background-image: url("./Login/img/gatinhos2.jpg");
+     background-repeat: repeat;
+     background-attachment: fixed;*/
+     background-color: lightblue;
+     background-size: 100%;
+     overflow-x: hidden;
+   }
+   fieldset{
+    background-color: rgba(255, 0, 0, 0);
+    border: rgba(0,0,0,0);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    border: 1px solid  rgba(0, 0, 0, 0);
+    border-radius: 8px;
+   }
+   #autor{
+     color: white;
+     margin-right: 200px;
+     width: 45%;
+     font-size: 140%;
+     background-color: rgba(186, 121, 97, 0.3);
+     border-radius: 10px;
+     transition: 0.4s;
+   }
+   #autor:hover{
+     background-color: rgba(186, 121, 97, 0.4);
+     border-radius: 3px;
+     width: 45%;
+     font-size: 150%;
+     transition: 0.4s;
+   }
+   #titulo{
+    background-color: rgba(186, 121, 97, 0.8);
+    border-radius: 8px;
+    border-style: none;
+    transition: 0.5s;
+    width: 65%;
+    color: white;
+    margin-left: 10%;
+    margin-top: -16%;
+    font-size: 19px;
+    height: 10%;
+   }
+   #titulo:hover{
+     background-color: rgba(186, 121, 97, 0.8);
+     border-radius: 8px;
+     border-style: none;
+     transition: 0.5s;
+     width: 65%;
+       color: white;
+     margin-left: 10%;
+     margin-top: -16%;
+     font-size: 21px;
+     height: 10%;
+
+   }
+   #cabecalho{
+     cursor:pointer;
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 3px;
+     width: 96%;
+     transition: 0.6s;
+     height: 90px;
+   }
+   #cabecalho:hover{
+     cursor:pointer;
+     background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 3px;
+     width: 96%;
+     transition: 0.6s;
+     height: 90px;
+   }
+
+   #images{
+     cursor: pointer;
+     z-index: 0;
+     width: 95%;
+     box-shadow: 0 0 0px #333;
+     /*color: white;*/
+     border: 0px solid gray;
+     transition: 0.5s;
+   }
+   #images:active{
+     cursor: pointer;
+     z-index: 0;
+     width: 96%;
+     box-shadow: 0 0 12px purple;
+     /*color: white;*/
+     border: 0px solid gray;
+     transition: 0.5s;
+   }
+   .post{
+     background-color: rgba(20, 20,20, 0.9);
+     border-radius: 20px;
+     margin-top: 6%;
+   }
+   /*Botão de like*/
+   #like {
+    transform: scale(1.3);
+    z-index: 1;
+    box-shadow: 0 0 20px #333;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    /*color: white;*/
+    border-radius: 40%;
+    border: 1px solid grey;
+    transition-duration: 0.2s;
+    margin-right: 75%;
+    margin-top: 3%;
+  }
+  #like:hover {
+        transform: scale(1.7);
+    color: white;
+  }
+  #like:active {
+    color: rgb(252, 222, 177);
+  }
+}
