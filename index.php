@@ -77,7 +77,7 @@ color: #EE0000;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 document.location.reload(false);
 </script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/df1511442e.js" crossorigin="anonymous"></script>
 <script>
 var x;
 var Stringval = "";
