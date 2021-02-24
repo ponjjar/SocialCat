@@ -26,6 +26,7 @@ if($favoritos != ''){
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style2.css" media="all" type="text/css">
+<script src="https://kit.fontawesome.com/df1511442e.js" crossorigin="anonymous"></script>
 <title>Home</title>
 <style>
 a, a:visited{
